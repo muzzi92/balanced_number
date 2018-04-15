@@ -6,6 +6,8 @@ def balancedNum(num)
   if num_array.length.even?
     if num_array[0...i-1].inject(0, :+) == num_array[i+1..-1].inject(0, :+)
       "Balanced"
+    else
+      "Not Balanced"
     end
   else
     if num_array[0...i].inject(0, :+) == num_array[i+1..-1].inject(0, :+)
@@ -13,5 +15,5 @@ def balancedNum(num)
     else
       "Not Balanced"
     end
-  end 
+  end
 end
