@@ -9,7 +9,11 @@ describe "balancedNum" do
     expect(balancedNum(234)).to eq("Not Balanced")
   end
 
-  it "should return 'Balanced' 23714" do
+  it "should return 'Balanced' for 23714" do
     expect(balancedNum(23714)).to eq("Balanced")
+  end
+
+  it "should return 'Not Balanced' for 12766" do
+    expect(balancedNum(12766)).to eq("Not Balanced")
   end
 end
